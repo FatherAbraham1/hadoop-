@@ -1,0 +1,214 @@
+hadoop@master:~/tools/hadoop2.6/bin$ history
+    1  sudo apt-get install vim
+    2  sudo apt-get update
+    3  sudo su root
+    4  su root
+    5  sudo su
+    6  su root
+    7  ifconfig
+    8  ps -e|grep ssh
+    9  /etc/init.d/ssh restart
+   10  sudo apt-get install ssh openssh-server
+   11  sudo apt-get install ssh 
+   12  sudo apt-get install ssh
+   13  sudo apt-get install ssh
+   14  sudo  install ssh
+   15  sudo  apt-get install ssh
+   16  apt-get install ssh
+   17  su root
+   18  ps -e |grep ssh
+   19  sudo /etc/init.d/ssh restart
+   20  ps -e |grep ssh
+   21  vim /etc/network/interfaces
+   22  sudo /etc/network/interfaces  restart
+   23  /etc/init.d/networking restart
+   24  sudo apt-get install vlan
+   25  /etc/init.d/networking restart
+   26  /etc/init.d/networking stop
+   27  sudo /etc/init.d/networking stop
+   28  sudo /etc/init.d/networking restart
+   29  cd /home/hadoop/tools/
+   30  ll
+   31  tar -zxvf apache-maven-3.2.2-bin.tar.gz 
+   32  ll
+   33  tar -zxvf eclipse-jee-luna-SR2-linux-gtk-x86_64.tar.gz 
+   34  ll
+   35  tar -zxvf hadoop-2.6.0.tar
+   36  tar -zxvf hadoop-2.6.0.tar.gz 
+   37  ll
+   38  tar -zxvf mahout-distribution-0.9.tar.gz 
+   39  ll
+   40  tar -zxvf scala2.10.tar.gz 
+   41  tar -zxvf spark1.4.tar.gz 
+   42  ll
+   43  tar -zxvf jdk-7u67-linux-x64.tar.gz 
+   44  ll
+   45  tar -zxvf idea.tar.gz 
+   46  ll
+   47  dh -f
+   48  df -h
+   49  mv apache-maven-3.2.2 maven3.2
+   50  ll
+   51  mv hadoop-2.6.0 hadoop2.6
+   52  mv jdk1.7.0_67 jdk7
+   53  ll
+   54  sudo gedit /etc/sudoers
+   55  sudo gedit ~/.bashrc
+   56  source ~/.bashrc
+   57  javac
+   58  java
+   59  hadoop
+   60  mahout
+   61  spark
+   62  maven
+   63  mvn
+   64  ifconfig
+   65  vim /etc/hosts
+   66  sudo vim /etc/hosts
+   67  source /etc/hosts
+   68  ufw disable
+   69  sudo ufw disable
+   70  sudo ufw status
+   71  ping 192.168.32.8 
+   72  ll
+   73  ls
+   74  ps -e |grep ssh
+   75  sudo apt-get install ssh
+   76  /etc/init.d/ssh start
+   77  ps -e |grep ssh
+   78  ssh
+   79  ssh localhost
+   80  cd /home/hadoop/tools/hadoop2.6/
+   81  ll
+   82  cd bin/
+   83  ll
+   84  cd ..
+   85  ll
+   86  cd sbin/
+   87  ll
+   88  cd ../etc/
+   89  ll
+   90  cd hadoop/
+   91  ll
+   92  vim hadoop-env.sh
+   93  gredit  hadoop-env.sh
+   94  gedit  hadoop-env.sh
+   95  gedit  yarn-env.sh
+   96  cd ../../sbin/
+   97  ll
+   98  cd ../etc/hadoop/
+   99  ll
+  100  gedit core-site.xml 
+  101  gedit hdfs-site.xml 
+  102  gedit yarn -site.xml 
+  103  gedit yarn-site.xml 
+  104  gedit mappered-site.xml 
+  105  cp mapred-site.xml.template mapred-site.xml
+  106  gedit mappered-site.xml 
+  107  exit
+  108  /etc/init.d/ssh restart
+  109  ps -e |grep ssh
+  110  etc/init.d/ssh start
+  111  /etc/init.d/ssh start
+  112  ps -e |grep ssh
+  113  sudo apt-get install ssh
+  114  ssh localhost
+  115  /etc/init.d/ssh start
+  116  ps -e |grep ssh
+  117  sudo apt-get install openssh-server
+  118  sudo /etc/init.d/ssh start
+  119  ps -e |grep ssh
+  120  apt-get install openssh
+  121  sudo apt-get install openssh
+  122  sudo rm -rf /var/lib/dpkg/lock
+  123  sudo rm -rf /var/cache/apt/archives/lock 
+  124  sudo apt-get update
+  125  javac
+  126  java
+  127  hadoop
+  128  mvn
+  129  mahout
+  130  sudo dpkg --configure -a
+  131  sudo dpkg -configure -a
+  132  suddo gedit /usr/share/applications/eclipse.desktop
+  133  sudo gedit /usr/share/applications/eclipse.desktop
+  134  cd /home/hadoop/tools/hadoop2.6/bin/
+  135  ll
+  136  cd ../sbin/
+  137  ll
+  138  start-all.sh
+  139  jps
+  140  stop-all.sh
+  141  ssh-keygen -t rsa
+  142  cd ~/.ssh
+  143  cat id_rsa.pub >> authorized_keys
+  144  ssh localhost
+  145  cd /home/hadoop/tools/hadoop2.6/sbin/
+  146  ll
+  147  start-all.sh
+  148  jps
+  149  ssh master
+  150  jps
+  151  stop-all.sh
+  152  ssh master
+  153  jps
+  154  cd ../etc/
+  155  ll
+  156  cd hadoop/
+  157  ll
+  158  vim slaves
+  159  cd ../../sbin/
+  160  ll
+  161  start-all.sh
+  162  jps
+  163  stop-all.sh
+  164  cd ../etc/hadoop/
+  165  ll
+  166  vim core-site.xml
+  167  cat mapred-site.xml
+  168  cat hdfs-site.xml
+  169  vim hdfs-site.xml
+  170  vim yarn-site.xml
+  171  cd ../../sbin/
+  172  cd ../bin/
+  173  ll
+  174  hdfs namenode -format
+  175  cd ../sbin/
+  176  ll
+  177  start-all.sh
+  178  jps
+  179  uname -a
+  180  jps
+  181  scala
+  182  sudo vim ~/.bashrc
+  183  gedit vim ~/.bashrc
+  184  source ~/.bashrc
+  185  idea.sh
+  186  scala
+  187  cd /home/hadoop/tools/
+  188  ll
+  189  cd hadoop2.6/
+  190  ll
+  191  cd bin/
+  192  ll
+  193  hdfs fs
+  194  test-container-executor 
+  195  hadoop fs -ls
+  196  hadoop fs -ls  /
+  197  hadoop fs -lsr  /
+  198  spark
+  199  spark --help
+  200  spark -help
+  201  spark-submit --help
+  202  spark-submit --master  spark://master:7077 --name WordCountByscala --class com.hq.WordCount --executor-memory 1G --total-executor-cores 2 /home/hadoop/IdeaProjects/HelloScala2/out/artifacts/ScalaTest_jar/HelloScala2.jar  hdfs://master:8020/test1/ 
+  203  spark-submit --master  spark://master:7077 --name WordCountByscala --class WordCount --executor-memory 1G --total-executor-cores 2 /home/hadoop/IdeaProjects/HelloScala2/out/artifacts/ScalaTest_jar/HelloScala2.jar  hdfs://master:8020/test1/ 
+  204  spark-submit --master  spark://master:7077 --name WordCountByscala --class WordCount --executor-memory 1G --total-executor-cores 2 /home/hadoop/IdeaProjects/HelloScala2/out/artifacts/ScalaTest_jar/HelloScala2.jar  hdfs://master:8080/test1/ 
+  205  spark-submit --master  spark://master:7077 --name WordCountByscala --class WordCount --executor-memory 1G --total-executor-cores 2 /home/hadoop/IdeaProjects/HelloScala2/out/artifacts/ScalaTest_jar/HelloScala2.jar  hdfs://master:6066/test1/ 
+  206  spark-submit --master  spark://master:7077 --name WordCountByscala --class WordCount --executor-memory 1G --total-executor-cores 2 /home/hadoop/IdeaProjects/HelloScala2/out/artifacts/ScalaTest_jar/HelloScala2.jar  hdfs://master/test1/ 
+  207  spark-submit --master  spark://master:7077 --name WordCountByscala --class WordCount --executor-memory 1G --total-executor-cores 2 /home/hadoop/IdeaProjects/HelloScala2/out/artifacts/ScalaTest_jar/HelloScala2.jar  hdfs://master:8028/test1/ 
+  208  spark-submit --master  spark://master:7077 --name WordCountByscala --class WordCount --executor-memory 1G --total-executor-cores 2 /home/hadoop/IdeaProjects/HelloScala2/out/artifacts/ScalaTest_jar/HelloScala2.jar  hdfs://master:40612/test1/ 
+  209  spark-submit --master  spark://master:7077 --name WordCountByscala --class WordCount --executor-memory 1G --total-executor-cores 2 /home/hadoop/IdeaProjects/HelloScala2/out/artifacts/ScalaTest_jar/HelloScala2.jar  hdfs://192.168.32.8:40612/test1/ 
+  210  spark-submit --master  spark://master:7077 --name WordCountByscala --class WordCount --executor-memory 1G --total-executor-cores 2 /home/hadoop/IdeaProjects/HelloScala2/out/artifacts/ScalaTest_jar/HelloScala2.jar  hdfs://192.168.32.8:9000/test1/ 
+  211  spark-submit --master  spark://master:7077 --name WordCountByscala --class WordCount --executor-memory 1G --total-executor-cores 2 /home/hadoop/IdeaProjects/HelloScala2/out/artifacts/ScalaTest_jar/HelloScala2.jar  hdfs://192.168.32.8:9000/test1/LICENSE.txt
+  212  history
+

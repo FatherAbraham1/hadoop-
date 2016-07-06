@@ -21,6 +21,3 @@ export PATH=.:$PATH:$SCALA_HOME/bin
 
 export SPARK_HOME=/home/hadoop/tools/spark1.4
 export PATH=.:$PATH:$SPARK_HOME/bin:$SPARK_HOME:sbin
-
-export HBASE_HOME=/home/hadoop/tools/hbase1
-export PATH=.:$PATH:$HBASE_HOME/bin
