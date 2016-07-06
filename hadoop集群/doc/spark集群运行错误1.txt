@@ -1,0 +1,121 @@
+hadoop@master:~/桌面$ spark-submit --master  spark://master:7077 --name WordCountByscala --class WordCount --executor-memory 1G --total-executor-cores 2 /home/hadoop/IdeaProjects/HelloScala2/out/artifacts/ScalaTest_jar/HelloScala2.jar  hdfs://192.168.32.8:9000/test1/LICENSE.txt
+
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+15/08/19 16:27:59 INFO SparkContext: Running Spark version 1.4.0
+15/08/19 16:28:00 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+15/08/19 16:28:01 INFO SecurityManager: Changing view acls to: hadoop
+15/08/19 16:28:01 INFO SecurityManager: Changing modify acls to: hadoop
+15/08/19 16:28:01 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(hadoop); users with modify permissions: Set(hadoop)
+15/08/19 16:28:02 INFO Slf4jLogger: Slf4jLogger started
+15/08/19 16:28:03 INFO Remoting: Starting remoting
+15/08/19 16:28:03 INFO Remoting: Remoting started; listening on addresses :[akka.tcp://sparkDriver@192.168.32.8:58498]
+15/08/19 16:28:03 INFO Utils: Successfully started service 'sparkDriver' on port 58498.
+15/08/19 16:28:03 INFO SparkEnv: Registering MapOutputTracker
+15/08/19 16:28:03 INFO SparkEnv: Registering BlockManagerMaster
+15/08/19 16:28:04 INFO DiskBlockManager: Created local directory at /tmp/spark-c15a6367-d21d-4368-af44-7f7654f02ed5/blockmgr-0092fbfb-5076-4f96-83e1-723a42ee51ed
+15/08/19 16:28:04 INFO MemoryStore: MemoryStore started with capacity 265.4 MB
+15/08/19 16:28:04 INFO HttpFileServer: HTTP File server directory is /tmp/spark-c15a6367-d21d-4368-af44-7f7654f02ed5/httpd-84bf4e20-15b1-4434-8aae-1fa340306741
+15/08/19 16:28:04 INFO HttpServer: Starting HTTP Server
+15/08/19 16:28:04 INFO Utils: Successfully started service 'HTTP file server' on port 45439.
+15/08/19 16:28:04 INFO SparkEnv: Registering OutputCommitCoordinator
+15/08/19 16:28:05 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+15/08/19 16:28:05 INFO SparkUI: Started SparkUI at http://192.168.32.8:4040
+15/08/19 16:28:14 INFO SparkContext: Added JAR file:/home/hadoop/IdeaProjects/HelloScala2/out/artifacts/ScalaTest_jar/HelloScala2.jar at http://192.168.32.8:45439/jars/HelloScala2.jar with timestamp 1439972893939
+15/08/19 16:28:14 INFO AppClient$ClientActor: Connecting to master akka.tcp://sparkMaster@master:7077/user/Master...
+15/08/19 16:28:16 INFO SparkDeploySchedulerBackend: Connected to Spark cluster with app ID app-20150819162816-0009
+15/08/19 16:28:17 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 39766.
+15/08/19 16:28:17 INFO NettyBlockTransferService: Server created on 39766
+15/08/19 16:28:17 INFO BlockManagerMaster: Trying to register BlockManager
+15/08/19 16:28:17 INFO BlockManagerMasterEndpoint: Registering block manager 192.168.32.8:39766 with 265.4 MB RAM, BlockManagerId(driver, 192.168.32.8, 39766)
+15/08/19 16:28:17 INFO BlockManagerMaster: Registered BlockManager
+15/08/19 16:28:18 INFO SparkDeploySchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+15/08/19 16:28:20 INFO MemoryStore: ensureFreeSpace(157248) called with curMem=0, maxMem=278302556
+15/08/19 16:28:20 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 153.6 KB, free 265.3 MB)
+15/08/19 16:28:20 INFO MemoryStore: ensureFreeSpace(14257) called with curMem=157248, maxMem=278302556
+15/08/19 16:28:20 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 13.9 KB, free 265.2 MB)
+15/08/19 16:28:20 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 192.168.32.8:39766 (size: 13.9 KB, free: 265.4 MB)
+15/08/19 16:28:20 INFO SparkContext: Created broadcast 0 from textFile at WordCount.scala:22
+15/08/19 16:28:27 INFO FileInputFormat: Total input paths to process : 1
+15/08/19 16:28:28 INFO SparkContext: Starting job: collect at WordCount.scala:24
+15/08/19 16:28:28 INFO DAGScheduler: Registering RDD 3 (map at WordCount.scala:24)
+15/08/19 16:28:28 INFO DAGScheduler: Got job 0 (collect at WordCount.scala:24) with 2 output partitions (allowLocal=false)
+15/08/19 16:28:28 INFO DAGScheduler: Final stage: ResultStage 1(collect at WordCount.scala:24)
+15/08/19 16:28:28 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 0)
+15/08/19 16:28:28 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 0)
+15/08/19 16:28:28 INFO DAGScheduler: Submitting ShuffleMapStage 0 (MapPartitionsRDD[3] at map at WordCount.scala:24), which has no missing parents
+15/08/19 16:28:28 INFO MemoryStore: ensureFreeSpace(4008) called with curMem=171505, maxMem=278302556
+15/08/19 16:28:28 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 3.9 KB, free 265.2 MB)
+15/08/19 16:28:28 INFO MemoryStore: ensureFreeSpace(2314) called with curMem=175513, maxMem=278302556
+15/08/19 16:28:28 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 2.3 KB, free 265.2 MB)
+15/08/19 16:28:28 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 192.168.32.8:39766 (size: 2.3 KB, free: 265.4 MB)
+15/08/19 16:28:28 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:874
+15/08/19 16:28:28 INFO DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 0 (MapPartitionsRDD[3] at map at WordCount.scala:24)
+15/08/19 16:28:28 INFO TaskSchedulerImpl: Adding task set 0.0 with 2 tasks
+15/08/19 16:28:43 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+15/08/19 16:28:58 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+15/08/19 16:29:13 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+^C15/08/19 16:29:20 INFO SparkContext: Invoking stop() from shutdown hook
+15/08/19 16:29:20 INFO SparkUI: Stopped Spark web UI at http://192.168.32.8:4040
+15/08/19 16:29:21 INFO DAGScheduler: Stopping DAGScheduler
+15/08/19 16:29:21 INFO DAGScheduler: Job 0 failed: collect at WordCount.scala:24, took 52.966038 s
+15/08/19 16:29:21 INFO DAGScheduler: ShuffleMapStage 0 (map at WordCount.scala:24) failed in 52.183 s
+Exception in thread "main" org.apache.spark.SparkException: Job cancelled because SparkContext was shut down
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$cleanUpAfterSchedulerStop$1.apply(DAGScheduler.scala:736)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$cleanUpAfterSchedulerStop$1.apply(DAGScheduler.scala:735)
+	at scala.collection.mutable.HashSet.foreach(HashSet.scala:79)
+	at org.apache.spark.scheduler.DAGScheduler.cleanUpAfterSchedulerStop(DAGScheduler.scala:735)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onStop(DAGScheduler.scala:1468)
+	at org.apache.spark.util.EventLoop.stop(EventLoop.scala:84)
+	at org.apache.spark.scheduler.DAGScheduler.stop(DAGScheduler.scala:1403)
+	at org.apache.spark.SparkContext.stop(SparkContext.scala:1642)
+	at org.apache.spark.SparkContext$$anonfun$3.apply$mcV$sp(SparkContext.scala:559)
+	at org.apache.spark.util.SparkShutdownHook.run(Utils.scala:2292)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1$$anonfun$apply$mcV$sp$1.apply$mcV$sp(Utils.scala:2262)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1$$anonfun$apply$mcV$sp$1.apply(Utils.scala:2262)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1$$anonfun$apply$mcV$sp$1.apply(Utils.scala:2262)
+	at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1772)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1.apply$mcV$sp(Utils.scala:2262)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1.apply(Utils.scala:2262)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1.apply(Utils.scala:2262)
+	at scala.util.Try$.apply(Try.scala:161)
+	at org.apache.spark.util.SparkShutdownHookManager.runAll(Utils.scala:2262)
+	at org.apache.spark.util.SparkShutdownHookManager$$anon$6.run(Utils.scala:2244)
+	at org.apache.hadoop.util.ShutdownHookManager$1.run(ShutdownHookManager.java:54)
+15/08/19 16:29:21 INFO SparkDeploySchedulerBackend: Shutting down all executors
+15/08/19 16:29:21 INFO SparkDeploySchedulerBackend: Asking each executor to shut down
+15/08/19 16:29:21 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+15/08/19 16:29:21 INFO Utils: path = /tmp/spark-c15a6367-d21d-4368-af44-7f7654f02ed5/blockmgr-0092fbfb-5076-4f96-83e1-723a42ee51ed, already present as root for deletion.
+15/08/19 16:29:21 INFO MemoryStore: MemoryStore cleared
+15/08/19 16:29:21 INFO BlockManager: BlockManager stopped
+15/08/19 16:29:21 INFO BlockManagerMaster: BlockManagerMaster stopped
+15/08/19 16:29:21 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+15/08/19 16:29:21 INFO SparkContext: Successfully stopped SparkContext
+15/08/19 16:29:21 INFO Utils: Shutdown hook called
+15/08/19 16:29:21 INFO Utils: Deleting directory /tmp/spark-c15a6367-d21d-4368-af44-7f7654f02ed5
+15/08/19 16:29:22 INFO RemoteActorRefProvider$RemotingTerminator: Shutting down remote daemon.
+15/08/19 16:29:22 INFO RemoteActorRefProvider$RemotingTerminator: Remote daemon shut down; proceeding with flushing remote transports.
+hadoop@master:~/桌面$ 
+
+
+-----------------------------------------------解决方案1--------------------------------------------------
+从警告信息上看，初始化job时没有获取到任何资源；提示检查集群，确保workers可以被注册并有足够的内存资源。
+
+
+如上问题产生的原因是多方面的，可能原因如下：
+
+
+1.因为提交任务的节点不能和spark工作节点交互，因为提交完任务后提交任务节点上会起一个进程，展示任务进度，大多端口为4044，工作节点需要反馈进度给该该端口，所以如果主机名或者IP在hosts中配置不正确。所以检查下主机名和ip是否配置正确
+
+
+2.有可能是内存不足
+
+  检查内存
+
+   conf.set("spark.executor.memory", "3000m")
+
+  Make sure to set SPARK_LOCAL_IP andSPARK_MASTER_IP.
+
+  查看8080端口，确保一些workers保持Alive状态，确保 some cores 是可利用的。
+
+
+

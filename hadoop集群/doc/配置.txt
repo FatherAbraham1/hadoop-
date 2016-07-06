@@ -1,0 +1,26 @@
+# Hadoop 
+export HADOOP_PREFIX="/home/hadoop/tools/hadoop2.6" 
+export PATH=$PATH:$HADOOP_PREFIX/bin:$HADOOP_PREFIX/sbin
+export HADOOP_COMMON_HOME=${HADOOP_PREFIX} 
+export HADOOP_HDFS_HOME=${HADOOP_PREFIX} 
+export HADOOP_MAPRED_HOME=${HADOOP_PREFIX}
+export HADOOP_YARN_HOME=${HADOOP_PREFIX}
+
+#set java environment
+export JAVA_HOME=/home/hadoop/tools/jdk7
+export JRE_HOME=/home/hadoop/tools/jdk7/jre
+
+export MAHOUT_HOME=/home/hadoop/tools/mahout-distribution-0.9
+export MAVEN_HOME=/home/hadoop/tools/maven3.2
+export PATH=$JAVA_HOME/bin:$MAVEN_HOME/bin:$MAHOUT_HOME/bin:$PATH
+export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+
+
+export SCALA_HOME=/home/hadoop/tools/scala2.10
+export PATH=.:$PATH:$SCALA_HOME/bin
+
+export SPARK_HOME=/home/hadoop/tools/spark1.4
+export PATH=.:$PATH:$SPARK_HOME/bin:$SPARK_HOME:sbin
+
+export HBASE_HOME=/home/hadoop/tools/hbase1
+export PATH=.:$PATH:$HBASE_HOME/bin
